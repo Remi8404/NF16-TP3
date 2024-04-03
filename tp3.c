@@ -8,7 +8,6 @@ Graphe* creerGraphe(){
 }
 
 void creerSommet(graphe *g, int id){
-  
   if(g->s==NULL){
     Sommet s={id,NULL,NULL};
     g->s = *s;
