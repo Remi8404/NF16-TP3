@@ -1,13 +1,16 @@
 #include tp3.h
 
 Graphe* creerGraphe(){
-  Graphe g={0};
+  Graphe g={NULL}
   return *g;
 }
 
 void creerSommet(graphe *g, int id){
   
-  if(g->s==0){
-    g->s 
+  if(g->s==NULL){
+    Sommet s={id,NULL,NULL}
+    g->s = *s
   }
+  else
+  
 }
