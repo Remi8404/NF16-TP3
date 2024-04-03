@@ -10,9 +10,13 @@ Graphe* creerGraphe(){
 void creerSommet(graphe *g, int id){
   
   if(g->s==NULL){
-    Sommet s={id,NULL,NULL}
-    g->s = *s
+    Sommet s={id,NULL,NULL};
+    g->s = *s;
   }
-  else
-  
+  else if(rechercherSommet(g, id)!=NULL){
+    printf("Le sommet %d existe déjà !", id);
+  }
+  else{
+    // a completer
+  }
 }
